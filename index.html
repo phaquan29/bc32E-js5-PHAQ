@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>j5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <body class="container mx-auto py-5">
+        <h3>Bài tập 1: Quản lý tuyển sinh</h3>
+        <div class="form-group row">
+          <div class="col-4">
+            <input
+              type="number"
+              id="diemChuan"
+              placeholder="Điểm chuẩn của hội đồng"
+              class="form-control"
+            />
+          </div>
+          <div class="col-4">
+            <select id="selectKhuVuc" class="form-control">
+              <option value="0">Chọn khu vực</option>
+              <option value="2">A</option>
+              <option value="1">B</option>
+              <option value="0.5">C</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select id="selectDoiTuong" class="form-control">
+              <option value="0">Chọn đối tượng</option>
+              <option value="2.5">1</option>
+              <option value="1.5">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+          <div class="col-4 mt-4">
+            <input
+              type="number"
+              id="diemMon1"
+              placeholder="Điểm môn 1"
+              class="form-control"
+            />
+          </div>
+          <div class="col-4 mt-4">
+            <input
+              type="number"
+              id="diemMon2"
+              placeholder="Điểm môn 2"
+              class="form-control"
+            />
+          </div>
+          <div class="col-4 mt-4">
+            <input
+              type="number"
+              id="diemMon3"
+              placeholder="Điểm môn 3"
+              class="form-control"
+            />
+          </div>
+          <div class="col-12 mt-2">
+            <button class="btn btn-primary" id="btnKetQua">Kết quả</button>
+          </div>
+        </div>
+        <div class="alert alert-danger" id="ketQua_b1"></div>
+    
+        <hr />
+        <br />
+        <br />
+        <h3>Bài tập 2: Tính tiền điện</h3>
+        <div class="form-group row">
+          <div class="col-4">
+            <input
+              type="text"
+              id="ten"
+              placeholder="Nhập tên"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-4">
+            <input
+              type="number"
+              id="kW"
+              placeholder="Nhập kW"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-12 mt-2">
+            <button class="btn btn-primary" id="btnTinhTienDien">
+              Tính tiền điện
+            </button>
+          </div>
+        </div>
+        <div class="alert alert-danger" id="ketQua_b2"></div>
+    
+        <hr />
+        <br />
+        <br />
+        <h3>Bài tập 3: Tính thuế thu nhập cá nhân</h3>
+        <div class="form-group row">
+          <div class="col-4">
+            <input
+              type="text"
+              id="ten_3"
+              placeholder="Nhập tên"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-4">
+            <input
+              type="number"
+              id="thuNhapNam"
+              placeholder="Nhập tổng thu nhập năm"
+              class="form-control"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="number"
+              id="soNguoiPhuThuoc"
+              placeholder="Nhập số người phụ thuộc"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-12 mt-2">
+            <button class="btn btn-primary" id="btnTinhTienThue">
+              Tính tiền thuế
+            </button>
+          </div>
+        </div>
+        <div class="alert alert-danger" id="ketQua_b3"></div>
+    
+        <hr />
+        <br />
+        <br />
+        <h3>Bài tập 4: Tính tiền cáp</h3>
+        <div class="form-group row">
+          <div class="col-4">
+            <select id="selectLoaiKhachHang" class="form-control">
+              <option value="X">Chọn loại khách hàng</option>
+              <option value="ND">Nhà Dân</option>
+              <option value="DN">Doanh Nghiệp</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <input
+              type="number"
+              id="maKhachHang"
+              placeholder="Nhập mã khách hàng"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-4">
+            <input
+              type="number"
+              id="soKenh"
+              placeholder="Nhập số kênh cao cấp"
+              class="form-control"
+            />
+          </div>
+          <div class="col-4 mt-4">
+            <input
+              type="number"
+              id="soKetNoi"
+              placeholder="Nhập số kết nối"
+              class="form-control"
+            />
+          </div>
+    
+          <div class="col-12 mt-2">
+            <button class="btn btn-primary" id="btnTinhTienCap">
+              Tính tiền cáp
+            </button>
+          </div>
+        </div>
+        <div class="alert alert-danger" id="ketQua_b4"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
